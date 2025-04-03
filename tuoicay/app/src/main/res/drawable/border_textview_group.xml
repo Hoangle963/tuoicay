@@ -1,0 +1,13 @@
+<!-- border_textview_group.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/> <!-- Màu nền của khung -->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/holo_blue_dark"/> <!-- Viền màu xanh đậm -->
+    <corners android:radius="8dp"/> <!-- Góc bo tròn -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp"/>
+</shape>

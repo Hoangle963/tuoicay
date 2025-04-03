@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="4dp"
+    android:background="@drawable/rounded_background">
+
+    <!-- Thiết bị -->
+    <TextView
+        android:id="@+id/textViewDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thiết bị"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Form Giờ bật -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Giờ bật -->
+        <TextView
+            android:id="@+id/textViewTimeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Giờ bật:"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <!-- Thời gian bắt đầu -->
+        <TextView
+            android:id="@+id/textViewTimeStartValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <!-- Nút gạt bật/tắt thiết bị -->
+        <Switch
+            android:id="@+id/switchDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="24sp"
+            android:textColor="#212121"
+            android:layout_marginStart="130dp"
+            android:layout_gravity="center_vertical"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:thumbTextPadding="10dp"
+            android:background="@drawable/rounded_background" />
+    </LinearLayout>
+
+    <!-- Form Giờ tắt -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Giờ tắt -->
+        <TextView
+            android:id="@+id/textViewTimeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Giờ tắt:"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <!-- Thời gian tắt -->
+        <TextView
+            android:id="@+id/textViewTimeEndValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Lặp lịch trình -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Lặp lại lịch trình -->
+        <TextView
+            android:id="@+id/textViewRepeatSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Lặp lại:"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <!-- Giá trị lặp lại -->
+        <TextView
+            android:id="@+id/textViewRepeatScheduleValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Ngày tùy chỉnh -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background">
+
+
+
+        <!-- Ngày tùy chỉnh hiển thị -->
+        <TextView
+            android:id="@+id/textViewCustomDaysValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

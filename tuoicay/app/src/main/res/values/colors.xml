@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#2196F3</color> <!-- Màu xanh dương -->
+    <color name="red">#4CAF50</color> <!-- Màu xanh lá cây -->
+    <color name="orange">#FF9800</color> <!-- Màu cam -->
+    <color name="white">#FFFFFF</color> <!-- Màu trắng -->
+
+</resources>

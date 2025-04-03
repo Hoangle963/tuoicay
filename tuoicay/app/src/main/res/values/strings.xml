@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tuoicay</string>
+
+<string-array name="repeat_schedule_options">
+    <item>Một lần</item>
+    <item>Hằng ngày</item>
+    <item>Tùy chỉnh</item>
+</string-array>
+</resources>

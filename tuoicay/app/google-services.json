@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "429856449200",
+    "firebase_url": "https://project-1140914197089894406-default-rtdb.firebaseio.com",
+    "project_id": "project-1140914197089894406",
+    "storage_bucket": "project-1140914197089894406.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429856449200:android:70e86f6b563c1660ac1175",
+        "android_client_info": {
+          "package_name": "com.app.tuoicay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVgud_t9TbhKeBC29eQO8mAFyT_2JymY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

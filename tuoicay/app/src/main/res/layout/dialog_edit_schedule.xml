@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Bảng thời gian chung -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn thời gian bật:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TimePicker
+            android:id="@+id/timePickerCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <!-- Lựa chọn lặp lại -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn lịch lặp lại:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRepeatSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:id="@+id/layoutCustomRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn các ngày trong tuần"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 2"
+                    android:layout_marginStart="16dp"
+                    android:textSize="20sp"
+                    android:padding="26dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 3"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+
+                    android:padding="26dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 4"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:padding="26dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 5"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:padding="26dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 6"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:padding="26dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ 7"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:padding="26dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkSunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chủ nhật"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"
+                    android:padding="26dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Công tắc máy bơm -->
+        <Switch
+            android:id="@+id/switchPump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bật/Tắt máy bơm"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Thời gian bật máy bơm -->
+        <LinearLayout
+            android:id="@+id/layoutPumpTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập thời gian bật máy bơm (giây)"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextPumpTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Nhập số giây"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Công tắc đèn -->
+        <Switch
+            android:id="@+id/switchLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bật/Tắt đèn"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Thời gian bật đèn -->
+        <LinearLayout
+            android:id="@+id/layoutLightTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập thời gian bật đèn (giây)"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextLightTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Nhập số giây"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Nút lưu -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSaveSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu lịch trình"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue" />
+    </LinearLayout>
+</ScrollView>
